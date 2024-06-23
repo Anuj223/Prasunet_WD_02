@@ -1,0 +1,105 @@
+*{
+        margin: 0;
+        /* background-color: #a19999; */
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+}
+.head{
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+}
+.logo{
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.lg{
+        font-size: 2.0rem;
+        
+}
+
+.stopwatch{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+}
+
+.watch{
+        border-radius: 20px;
+        /* width: fit-content; */
+        padding: 26px;
+        background: #f0f0f0;
+        border: 2px solid rgb(22, 21, 21);
+        font-size: 2.3rem;
+}
+button{
+        font-size: 1.23rem;
+    border-radius: 9px;
+    padding: 7px;
+    margin: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+        font-weight: bold;
+}
+#laps{
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+
+}
+
+#laps li {
+        font-size: 1.4rem;
+        margin: 11px 0px;
+        padding: 11px 74px;
+        background: #e0e0e0;;
+        color: #333;
+        border-radius: 8px;
+    }
+
+@media screen and (max-width:510px) {
+        .watch{
+                font-size: 1.9rem;
+        }
+        button{
+                font-size: 0.77rem;
+        }
+}
+
+@media screen and (max-width:425px){
+        .watch{
+                font-size: 1.43rem;
+        }
+        button{
+                margin: 6px;
+        }
+        #laps li{
+                font-size: 1.1rem;
+                margin: 11px 0px;
+                padding: 8px 60px;
+        }
+}
+@media screen and (max-width:365px) {
+ 
+        .watch{
+                padding: 11px;
+        }
+        button{
+                margin: 6px;
+        font-size: 0.6rem;
+        padding: 5px;
+        }
+        #laps li{
+                padding: 8px 43px;
+        }
+}
